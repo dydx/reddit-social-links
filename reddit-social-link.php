@@ -10,17 +10,17 @@
 		License: GPLv2
 	 */
 
-	class Reddit_Social_Link {
-		function __construct() {
+  class Reddit_Social_Link {
+    function __construct() {
 
-			add_filter( 'the_content', function($content) {
-				return $content .=
-					"<script type='text/javascript' src='//www.redditstatic.com/button/button1.js'></script>";
-			});
+      add_filter( 'the_content', function($content) {
+        return $content .=
+        "<script type='text/javascript' src='//www.redditstatic.com/button/button1.js'></script>";
+      });
 
-		}
-	}
+    }
+  }
 
-	$my_reddit_social_link = new Reddit_Social_Link();
+  $my_reddit_social_link = new Reddit_Social_Link();
 
 ?>
